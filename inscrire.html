@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Connexion et Inscription en HTML et CSS | DevDécouverte</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <span class="bg-animate"></span>
+        <span class="bg-animate2"></span>
+
+        <div class="form-box login">
+            <h2 class="animation" style="--i:0; --j:21;">CONNEXION</h2>
+            <form action="login.php" method="POST">
+                <div class="input-box animation" style="--i:1; --j:22;">
+                    <input type="text" required name="cin1">
+                    <label>Cin</label>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box animation" style="--i:2; --j:23;">
+                    <input type="password" required name="mdp1">
+                    <label>Mot de passe</label>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+             
+                <button type="submit" class="btn animation" style="--i:3; --j:24;">Connexion</button>
+                <div class="logreg-link animation" style="--i:4; --j:25;">
+                    <p>N'avez-vous pas de compte ? <a href="#" class="register-link">Inscrivez-vous</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="info-text login">
+            <h2 class="animation" style="--i:0; --j:20;">Bienvenue Par Ici!</h2>
+            <p class="animation" style="--i:1; --j:21;"> Merci d'etre avec nous </p>
+        </div>
+
+        <div class="form-box register">
+            <h2 class="animation" style="--i:17; --j:0;" id="inscri">INSCRIPTION</h2>
+            <form action="sign_up.php" method="POST">
+                <div class="input-box animation" style="--i:18; --j:1;">
+                    <input type="text" required name="cin">
+                    <label>Cin</label>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box animation" style="--i:18; --j:1;">
+                    <input type="text" required name="nom">
+                    <label>Nom d'utilisateur</label>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box animation" style="--i:19; --j:2;">
+                    <input type="text" required name="email">
+                    <label>Email</label>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+                <div class="input-box animation" style="--i:20; --j:3;">
+                    <input type="password" required name="mdp">
+                    <label>Mot de passe</label>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <div class="input-box animation" style="--i:20; --j:3;">
+                    <input type="telephone" required name="tel">
+                    <label>Téléphone</label>
+                    <i class='bx bxs-phone'></i>
+                </div>
+                <button type="submit" class="btn animation" style="--i:21; --j:4;">Inscription</button>
+                <div class="logreg-link animation" style="--i:22; --j:5;">
+                    <p>Disposez-vous déjà d'un compte?  <a href="#" class="login-link">Connectez-vous</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="info-text register">
+            <h2 class="animation" style="--i:17; --j:0;">Bienvenue Par Ici!</h2>
+            <p class="animation" style="--i:18; --j:1;">Merci d'etre avec nous</p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

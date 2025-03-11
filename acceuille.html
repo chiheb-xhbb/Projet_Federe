@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Link File CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="img/13a422fb-387d-422d-b94a-1e9fb9689ea8-removebg-preview.png" class="logo" alt="">
+            <div class="menu">
+                <a href="acceuille.html">Home</a>
+                <a href="inscrire.html">Inscription</a>
+                <a href="liste voit.html">Variations</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="hero">
+
+        <div class="text">
+            <h4>Puissante, Amusante et</h4>
+            <h1>Féroce à <br> <span>Conduire</span></h1>
+            <p>Élégance Authentique, Puissance Réelle, Performance Pure.</p>
+            <a href="#" class="btn">Découvrez-nous</a>
+        </div>
+    </div>
+
+    <script>
+        let heroBg = document.querySelector('.hero');
+
+        setInterval(() => {
+            heroBg.style.backgroundImage = "url(img/bg-light.jpg)"
+            
+            setTimeout(() => {
+                heroBg.style.backgroundImage = "url(img/bg.jpg)"
+            }, 1000);
+        }, 2200);
+    </script>
+</body>
+</html>
