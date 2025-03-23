@@ -16,13 +16,19 @@ $req = "SELECT * FROM utilisateurs WHERE id = '$cin' AND mot_de_passe = '$mdp'";
 $res = mysqli_query($con, $req);
 
 if (mysqli_num_rows($res) > 0) {
-    echo "utilisateur mawjoud";
+    $user = mysqli_fetch_assoc($res);
+
+    // Stocker les informations de l'utilisateur dans la session
+    $_SESSION['user_id'] = $user['cin1'];
+    $_SESSION['user_name'] = $user['mdp1'];
+
+    // Rediriger vers la page d'accueil après connexion
+    header("Location: acceuille.html");
+    exit();
 } else {
-    echo "<script>
-            alert('Utilisateur non trouvé ! Vérifiez vos informations.');
-            window.location.href = 'inscrire.html'; // Change cette URL si nécessaire
-          </script>";
+    header("Location: inscrire.html?message=error");
 }
+
 
 // Fermer la connexion
 mysqli_close($con);
